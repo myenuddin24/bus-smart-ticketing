@@ -1,11 +1,362 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!doctype html>
+<html lang="en" data-theme="light">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Greenline Paribahan</title>
-</head>
-<body>
-    
-</body>
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="styles/style.css" />
+
+    <!-- daisyUI and Tailwind CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@5"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  </head>
+  <body class="font-raleway">
+    <!------- header section start ------>
+    <header class="lg:px-24 px-3">
+      <!-- navbar start -->
+      <nav>
+        <div class="navbar bg-base-100">
+          <div class="navbar-start">
+            <div class="dropdown">
+              <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="h-5 w-5"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M4 6h16M4 12h8m-8 6h16"
+                  />
+                </svg>
+              </div>
+              <ul
+                tabindex="-1"
+                class="menu menu-sm dropdown-content bg-base-100 rounded-box z-1 mt-3 w-52 p-2 shadow"
+              >
+                <li class="font-medium text-[#030712B3]"><a>Home</a></li>
+                <li class="font-medium text-[#030712B3]"><a>About</a></li>
+                <li class="font-medium text-[#030712B3]"><a>Destination</a></li>
+                <li class="font-medium text-[#030712B3]"><a>Search</a></li>
+              </ul>
+            </div>
+            <a
+              class="btn-ghost lg:text-3xl text-xl font-extrabold text-[#030712]"
+              >P-Ticket</a
+            >
+          </div>
+          <div class="navbar-center hidden lg:flex">
+            <ul class="menu menu-horizontal px-1 lg:gap-11">
+              <li class="font-medium text-[#030712B3]"><a>Home</a></li>
+              <li class="font-medium text-[#030712B3]"><a>About</a></li>
+              <li class="font-medium text-[#030712B3]"><a>Destination</a></li>
+              <li class="font-medium text-[#030712B3]"><a>Search</a></li>
+            </ul>
+          </div>
+          <div class="navbar-end">
+            <a
+              class="btn font-bold text-[#1DD100] lg:text-xl bg-[#1DD1001a] rounded-lg border-[#1DD10066] lg:gap-3"
+              ><span>Bus</span><img src="images/bus-icon.png" alt="bus-icon"
+            /></a>
+          </div>
+        </div>
+      </nav>
+      <!-- navbar end -->
+
+      <!-- banner start -->
+      <div class="container mx-auto">
+        <div
+          class="hero lg:h-[550px] bg-cover rounded-2xl"
+          style="background-image: url(images/banner.png)"
+        >
+          <div class="hero-content text-neutral-content text-center max-w-3xl">
+            <div class="">
+              <h1 class="lg:mb-8 mb-3 text-2xl lg:text-6xl font-extrabold">
+                End-to-End Travel with <br />
+                <span class="text-[#1DD100]">P Paribahan</span>
+              </h1>
+              <p
+                class="lg:mb-8 mb-3 font-inter text-xs lg:text-base text-center"
+              >
+                Book your bus tickets easily, choose your seat, and enjoy a
+                safe, comfortable, and hassle-free journey with P-Ticket.
+              </p>
+              <button
+                class="btn btn-primary text-[#030712] font-bold text-sm lg:text-xl bg-[#1DD100] rounded-xl border-none shadow-none lg:px-5 lg:py-7"
+              >
+                Buy Tickets
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- banner end -->
+
+      <!-- banner card -->
+      <div
+        class="font-inter flex lg:flex-row flex-col justify-center items-center lg:gap-6 gap-2 lg:-mt-14"
+      >
+        <!-- card-1 -->
+        <div
+          class="flex justify-center items-center gap-5 px-7 py-5 rounded-3xl shadow-[0_3px_0_0_#1DD100] bg-[#ffffff]"
+        >
+          <div>
+            <img
+              src="images/people.png"
+              class="lg:w-12 w-8 lg:h-12 h-8"
+              alt=""
+            />
+          </div>
+          <div>
+            <h1 class="lg:text-3xl text-xl font-bold text-[#030712] lg:mb-2">
+              500K+
+            </h1>
+            <p class="text-[#03071299] lg:text-base text-xs">
+              Registered users
+            </p>
+          </div>
+        </div>
+        <!-- card-2 -->
+        <div
+          class="flex justify-center items-center gap-5 px-7 py-5 rounded-3xl shadow-[0_3px_0_0_#1DD100] bg-[#ffffff]"
+        >
+          <div>
+            <img
+              src="images/ticket-cupon.png"
+              class="lg:w-12 w-8 lg:h-12 h-8"
+              alt=""
+            />
+          </div>
+          <div>
+            <h1 class="lg:text-3xl text-xl font-bold text-[#030712] lg:mb-2">
+              1.7 lacks
+            </h1>
+            <p class="text-[#03071299] lg:text-base text-xs">Tickets sold</p>
+          </div>
+        </div>
+        <!-- card-3 -->
+        <div
+          class="flex justify-center items-center gap-5 px-7 py-5 rounded-3xl shadow-[0_3px_0_0_#1DD100] bg-[#ffffff]"
+        >
+          <div>
+            <img
+              src="images/stoppage.png"
+              class="lg:w-12 w-8 lg:h-12 h-8"
+              alt=""
+            />
+          </div>
+          <div>
+            <h1 class="lg:text-3xl text-xl font-bold text-[#030712] lg:mb-2">
+              80K+
+            </h1>
+            <p class="text-[#03071299] lg:text-base text-xs">Rental partners</p>
+          </div>
+        </div>
+      </div>
+    </header>
+    <!------- header section end -------->
+
+    <!-------- main section -------->
+    <main class="container mx-auto lg:mt-24 mt-12">
+      <!-- Best offers section -->
+      <section class="lg:px-24 px-3 lg:mb-24 mb-12">
+        <h2
+          class="lg:text-4xl text-2xl font-bold text-[#030712] text-center lg:mb-10 mb-8"
+        >
+          Best offers for you
+        </h2>
+        <div
+          class="flex lg:flex-row flex-col items-center justify-between gap-5 lg:mb-12 mb-10"
+        >
+          <!-- coupon card-1 -->
+          <div
+            class="flex items-center justify-center lg:gap-8 bg-[#FFBF0F] rounded-2xl lg:w-1/2 w-full"
+          >
+            <div class="font-inter space-y-2">
+              <h2 class="lg:text-3xl text-xl font-extrabold text-[#030712cc]">
+                15% OFF
+              </h2>
+              <p class="lg:text-base text-xs text-[#030712cc] font-bold">
+                on your next purchase
+              </p>
+              <p class="text-xs text-[#03071280]">use by January 2024</p>
+            </div>
+            <div>
+              <img class="lg:h-56 h-40" src="images/cupon-devider.png" alt="" />
+            </div>
+            <div class="space-y-2">
+              <h2 class="lg:text-2xl text-xl font-bold text-[#030712]">
+                NEW15
+              </h2>
+              <p class="text-[#03071266]">Coupon Code</p>
+            </div>
+          </div>
+          <!-- coupon card-2 -->
+          <div
+            class="flex items-center justify-center lg:gap-8 bg-[#F78C9C] rounded-2xl lg:w-1/2 w-full"
+          >
+            <div class="font-inter space-y-2">
+              <h2 class="lg:text-3xl text-xl font-extrabold text-[#030712cc]">
+                20% OFF
+              </h2>
+              <p class="lg:text-base text-xs text-[#030712cc] font-bold">
+                on your next purchase
+              </p>
+              <p class="text-xs text-[#03071280]">use by January 2024</p>
+            </div>
+            <div>
+              <img class="lg:h-56 h-40" src="images/cupon-devider.png" alt="" />
+            </div>
+            <div class="space-y-2">
+              <h2 class="lg:text-2xl text-xl font-bold text-[#030712]">
+                Couple 20
+              </h2>
+              <p class="text-[#03071266]">Coupon Code</p>
+            </div>
+          </div>
+        </div>
+        <div class="text-center">
+          <button
+            class="btn btn-neutral btn-outline lg:text-xl text-base font-bold text-[#1DD100] border-[#1DD100] rounded-lg px-7 py-6"
+          >
+            See All Offers
+          </button>
+        </div>
+      </section>
+
+      <!---- seat booking section ---->
+      <section
+        class="shadow-[0_-2px_0_0_#1DD100] rounded-t-3xl bg-[#F7F8F8] lg:py-24 py-12"
+      >
+        <!-- heading -->
+        <div
+          class="max-w-[736px] mx-auto text-center lg:space-y-5 space-y-3 mb-8 px-3"
+        >
+          <h2 class="lg:text-4xl text-2xl font-bold text-[#030712]">
+            P.H Paribahan
+          </h2>
+          <p class="font-inter lg:text-base text-xs text-[#03071299]">
+            Travel comfortably and safely with P.H Paribahan. Book your bus
+            tickets easily, choose your preferred seat, and enjoy a smooth
+            journey with our trusted transportation partners.
+          </p>
+        </div>
+
+        <!------ full bus booking section ------->
+        <div class="lg:mx-24 mx-3">
+          <!-- 1st section -->
+          <div
+            class="bg-[#ffffff] flex lg:flex-row flex-col lg:gap-5 rounded-3xl lg:pl-8 lg:pr-14"
+          >
+            <!-- 1------------ -->
+            <div class="flex flex-col justify-center gap-6 flex-1 my-8">
+              <!-- 1.1 -->
+              <div
+                class="flex lg:flex-row flex-col justify-between items-center gap-2"
+              >
+                <div class="flex justify-center items-center gap-2">
+                  <div>
+                    <img
+                      class="lg:w-14 lg:h-9 w-9 h-6"
+                      src="images/bus-logo.png"
+                      alt=""
+                    />
+                  </div>
+                  <div>
+                    <h3
+                      class="lg:text-2xl text-base font-bold text-[#030712] mb-1"
+                    >
+                      Greenline Paribahan
+                    </h3>
+                    <p class="font-inter lg:text-base text-xs text-[#03071299]">
+                      Coach-009-WEB ! AC_Business
+                    </p>
+                  </div>
+                </div>
+                <div
+                  class="flex justify-center items-center gap-2 bg-[#1DD10026] lg:w-44 lg:h-12 w-36 h-10 rounded-lg"
+                >
+                  <img class="w-6 h-6" src="images/seat-green.png" alt="" />
+                  <p
+                    class="font-inter lg:text-base text-xs font-medium text-[#1DD100]"
+                  >
+                    <span>40</span> Seats left
+                  </p>
+                </div>
+              </div>
+              <!-- 1.2 -->
+              <div class="bg-[#F7F8F8] lg:p-8 px-4 py-8 rounded-3xl">
+                <div class="flex justify-between items-center">
+                  <p class="font-semibold text-[#03071299]">Route</p>
+                  <p class="font-semibold text-[#030712]">Dhaka - Sylhet</p>
+                </div>
+                <hr class="my-5 text-[#03071233] border-dashed" />
+                <div class="flex justify-between items-center">
+                  <p class="font-semibold text-[#03071299]">Departure Time</p>
+                  <p class="font-semibold text-[#030712]">9:00 PM</p>
+                </div>
+                <hr class="my-5 text-[#03071233] border-dashed" />
+                <div
+                  class="flex lg:flex-row flex-col gap-3 justify-between items-center"
+                >
+                  <div class="bg-[#0307120d] px-6 py-4 rounded-lg">
+                    <p class="font-inter font-medium text-[#030712cc]">
+                      Boarding Point - Laxmipur
+                    </p>
+                  </div>
+                  <div class="bg-[#0307120d] px-6 py-4 rounded-lg">
+                    <p class="font-inter font-medium text-[#030712cc]">
+                      Dropping Point - Bogura
+                    </p>
+                  </div>
+                  <div class="bg-[#0307120d] px-6 py-4 rounded-lg">
+                    <p class="font-inter font-medium text-[#030712cc]">
+                      Est. Time - 11 Hour
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- 2-------------------------------- -->
+            <div>
+              <img
+                class="hidden lg:block"
+                src="images/info-devider.png"
+                alt=""
+              />
+            </div>
+            <!-- 3-------------------------------- -->
+            <div class="flex flex-col justify-center items-center">
+              <img src="images/fare.png" alt="" />
+              <h3
+                class="lg:text-2xl text-xl font-bold text-[#030712] mt-4 mb-2"
+              >
+                550 Taka
+              </h3>
+              <p class="font-inter lg:text-base text-xs text-[#03071299] mb-4">
+                Per Seat
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- footer section -->
+    <footer></footer>
+
+    <!----------- JavaScript ----------->
+    <script src="scripts/utility.js"></script>
+    <script src="scripts/custom.js"></script>
+  </body>
 </html>
