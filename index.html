@@ -751,16 +751,14 @@
               </h3>
               <hr class="my-5 text-[#03071233] border-dashed" />
               <div
-                class="font-inter lg:text-base text-xs text-[#030712] 
-                bg-[#F7F8F8] font-medium lg:p-8 p-4 rounded-xl"
+                class="font-inter lg:text-base text-xs text-[#030712] bg-[#F7F8F8] font-medium lg:p-8 p-4 rounded-xl"
               >
                 <div class="flex items-center justify-between">
                   <div class="flex items-center justify-center gap-1">
                     <p>Seat</p>
                     <div
                       id="seat-count"
-                      class="text-white bg-[#1DD100] w-6 h-4 text-xs 
-                      font-bold text-center rounded-md"
+                      class="text-white bg-[#1DD100] w-6 h-4 text-xs font-bold text-center rounded-md"
                     >
                       0
                     </div>
@@ -778,8 +776,19 @@
                   <p>Total Price</p>
                   <p>BDT <span id="total-price">0</span></p>
                 </div>
-                <div>
-                  <!-- input filled will be here -->
+                <div class="flex items-center justify-center w-full">
+                  <input
+                    id="input-coupon"
+                    type="text"
+                    placeholder="Have any copupon?"
+                    class="lg:text-base text-xs p-3 border-none bg-[#ffffff] my-3 w-full rounded-xl"
+                  />
+                  <button
+                    id="apply-coupon"
+                    class="btn lg:text-base text-xs font-semibold text-[#ffffff] bg-[#1DD100] rounded-lg lg:-ml-20 -ml-[70px]"
+                  >
+                    Apply
+                  </button>
                 </div>
                 <div class="flex items-center justify-between">
                   <p>Grand Total</p>
@@ -788,7 +797,91 @@
               </div>
 
               <!-- `````````````````` -->
-              <div></div>
+              <div class="mt-4 font-inter">
+                <fieldset
+                  class="fieldset rounded-box w-full lg:text-base text-xs space-y-2"
+                >
+                  <label class="label text-[#030712] font-semibold"
+                    >Passenger Name*</label
+                  >
+                  <input
+                    type="text"
+                    class="input w-full lg:text-base text-xs rounded-xl p-6"
+                    placeholder="Enter your name"
+                  />
+
+                  <label class="label text-[#030712] font-semibold"
+                    >Phone Number*</label
+                  >
+                  <input
+                    type="tel"
+                    class="input w-full lg:text-base text-xs rounded-xl p-6"
+                    placeholder="Enter your phone number"
+                    maxlength="11"
+                  />
+
+                  <label class="label text-[#030712] font-semibold"
+                    >Email ID</label
+                  >
+                  <input
+                    type="email"
+                    class="input w-full lg:text-base text-xs rounded-xl p-6"
+                    placeholder="Enter your email id"
+                  />
+
+                  <button
+                    id="next-btn"
+                    class="btn bg-[#1DD100] text-white my-2 w-full rounded-xl font-raleway font-extrabold lg:text-lg text-base"
+                    onclick="my_modal_4.showModal()"
+                  >
+                    Next
+                  </button>
+                </fieldset>
+                <div
+                  class="text-xs text-[#03071299] flex items-center lg:justify-evenly justify-between"
+                >
+                  <a href="#" class="underline decoration-[#03071299]"
+                    >Terms and Conditions</a
+                  >
+                  <a href="#" class="underline decoration-[#03071299]"
+                    >Cancellation Policy</a
+                  >
+                </div>
+              </div>
+            </div>
+
+            <!---------- modal ---------->
+            <div>
+              <dialog id="my_modal_4" class="modal">
+                <div
+                  class="modal-box w-11/12 max-w-5xl font-inter flex flex-col items-center justify-center py-14"
+                >
+                  <div>
+                    <img src="images/success.png" alt="" class="lg:w-24 w-14 lg:h-24 h-14" />
+                  </div>
+                  <h3 class="my-6 lg:text-2xl text-xl font-bold text-[#27AE60]">
+                    SUCCESS
+                  </h3>
+                  <p class="text-[#4A4A4A] font-bold max-w-[500px] text-center">
+                    Thank you for Booking Our Bus Seats. We are working hard to
+                    find the best service and deals for you.
+                  </p>
+                  <p class="py-4 text-[#4A4A4Ab3] text-center">
+                    Shortly you will find a confirmation in your email.
+                  </p>
+                  <div class="modal-action">
+                    <form method="dialog">
+                      <!-- if there is a button, it will close the modal -->
+                      <button
+                        class="btn bg-[#27AE60] text-[#ffffff] lg:px-24 
+                        px-16 rounded-full"
+                      >
+                        Continue
+                      </button>
+                    </form>
+                  </div>
+                </div>
+              </dialog>
             </div>
           </div>
         </div>
@@ -796,7 +889,9 @@
     </main>
 
     <!-- footer section -->
-    <footer></footer>
+    <footer>
+      
+    </footer>
 
     <!----------- JavaScript ----------->
     <script src="scripts/utility.js"></script>
