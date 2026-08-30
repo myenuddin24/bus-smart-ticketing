@@ -17,7 +17,7 @@
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
   </head>
   <body class="font-raleway">
-    <!------- header section start ------>
+    <!------- header section ------>
     <header class="lg:px-24 px-3">
       <!-- navbar start -->
       <nav>
@@ -71,7 +71,6 @@
           </div>
         </div>
       </nav>
-      <!-- navbar end -->
 
       <!-- banner start -->
       <div class="container mx-auto">
@@ -100,7 +99,6 @@
           </div>
         </div>
       </div>
-      <!-- banner end -->
 
       <!-- banner card -->
       <div
@@ -164,7 +162,6 @@
         </div>
       </div>
     </header>
-    <!------- header section end -------->
 
     <!-------- main section -------->
     <main class="container mx-auto lg:mt-24 mt-12">
@@ -201,6 +198,7 @@
               <p class="text-[#03071266]">Coupon Code</p>
             </div>
           </div>
+
           <!-- coupon card-2 -->
           <div
             class="flex items-center justify-center lg:gap-8 bg-[#F78C9C] rounded-2xl lg:w-1/2 w-full"
@@ -254,13 +252,12 @@
 
         <!------ full bus booking section ------->
         <div class="lg:mx-24 mx-3">
-          <!-- 1st section -->
+          <!---- 1st section ---->
           <div
             class="bg-[#ffffff] flex lg:flex-row flex-col lg:gap-5 rounded-3xl lg:pl-8 lg:pr-14"
           >
-            <!-- 1------------ -->
             <div class="flex flex-col justify-center gap-6 flex-1 my-8">
-              <!-- 1.1 -->
+              <!----- bus info ----->
               <div
                 class="flex lg:flex-row flex-col justify-between items-center gap-2"
               >
@@ -294,7 +291,8 @@
                   </p>
                 </div>
               </div>
-              <!-- 1.2 -->
+
+              <!----- bus route ----->
               <div class="bg-[#F7F8F8] lg:p-8 px-4 py-8 rounded-3xl">
                 <div class="flex justify-between items-center">
                   <p class="font-semibold text-[#03071299]">Route</p>
@@ -327,7 +325,8 @@
                 </div>
               </div>
             </div>
-            <!-- 2-------------------------------- -->
+
+            <!---- divider ---->
             <div>
               <img
                 class="hidden lg:block"
@@ -335,7 +334,8 @@
                 alt=""
               />
             </div>
-            <!-- 3-------------------------------- -->
+
+            <!-- seat price -->
             <div class="flex flex-col justify-center items-center">
               <img src="images/fare.png" alt="" />
               <h3
@@ -353,7 +353,7 @@
           <div
             class="bg-white lg:p-8 p-6 mt-5 rounded-3xl flex lg:flex-row flex-col items-start justify-between gap-8"
           >
-            <!-- 2.1 -->
+            <!--------- Select Your Seat --------->
             <div class="lg:w-3/5 w-full">
               <h3 class="lg:text-xl text-base font-semibold text-[#030712]">
                 Select Your Seat
@@ -392,7 +392,7 @@
                 </div>
               </div>
 
-              <!------------ seat number --------->
+              <!--------- seat number --------->
               <div
                 class="grid lg:grid-cols-[repeat(15,1fr)] grid-cols-[repeat(6,1fr)] lg:gap-5 gap-3 items-center"
               >
@@ -736,7 +736,6 @@
                   J4
                 </div>
               </div>
-              <!-- seat number end -->
             </div>
 
             <!-- divider -->
@@ -744,7 +743,7 @@
               class="border-t border-dashed border-[#0307124d] self-stretch lg:border-t-0 lg:border-l"
             ></div>
 
-            <!-- 2.2.............. -->
+            <!------- selected seat ------->
             <div class="lg:w-2/5 w-full">
               <h3 class="lg:text-xl text-base font-semibold text-[#030712]">
                 Select Your Seat
@@ -776,6 +775,8 @@
                   <p>Total Price</p>
                   <p>BDT <span id="total-price">0</span></p>
                 </div>
+
+                <!---- apply coupon ---->
                 <div class="flex items-center justify-center w-full">
                   <input
                     id="input-coupon"
@@ -796,7 +797,7 @@
                 </div>
               </div>
 
-              <!-- `````````````````` -->
+              <!------ passenger info ------>
               <div class="mt-4 font-inter">
                 <fieldset
                   class="fieldset rounded-box w-full lg:text-base text-xs space-y-2"
@@ -850,14 +851,18 @@
               </div>
             </div>
 
-            <!---------- modal ---------->
+            <!-------- modal -------->
             <div>
               <dialog id="my_modal_4" class="modal">
                 <div
                   class="modal-box w-11/12 max-w-5xl font-inter flex flex-col items-center justify-center py-14"
                 >
                   <div>
-                    <img src="images/success.png" alt="" class="lg:w-24 w-14 lg:h-24 h-14" />
+                    <img
+                      src="images/success.png"
+                      alt=""
+                      class="lg:w-24 w-14 lg:h-24 h-14"
+                    />
                   </div>
                   <h3 class="my-6 lg:text-2xl text-xl font-bold text-[#27AE60]">
                     SUCCESS
@@ -871,10 +876,8 @@
                   </p>
                   <div class="modal-action">
                     <form method="dialog">
-                      <!-- if there is a button, it will close the modal -->
                       <button
-                        class="btn bg-[#27AE60] text-[#ffffff] lg:px-24 
-                        px-16 rounded-full"
+                        class="btn bg-[#27AE60] text-[#ffffff] lg:px-24 px-16 rounded-full"
                       >
                         Continue
                       </button>
@@ -889,8 +892,44 @@
     </main>
 
     <!-- footer section -->
-    <footer>
-      
+    <footer class="bg-[#030712] text-[#ffffff] lg:p-24 p-4">
+      <div class="flex lg:flex-row flex-col justify-between items-center gap-2">
+        <div class="lg:text-start text-center">
+          <h2 class="lg:text-3xl text-2xl font-extrabold">P-Ticket</h2>
+          <p
+            class="font-inter lg:text-base text-xs text-[#ffffffcc] max-w-96 lg:mt-4 mt-2"
+          >
+            P-Ticket is a digital platform to make your daily commuting better.
+          </p>
+        </div>
+        <div>
+          <p class="font-semibold lg:text-xl text-lg">Download our app</p>
+          <div
+            class="btn bg-[#030712] text-white p-6 flex items-center justify-center gap-2 lg:mt-4 mt-2"
+          >
+            <img src="images/playstore.png" alt="" class="w-6 h-7" />
+            <div class="font-inter">
+              <p class="text-xs">GET IT ON</p>
+              <p class="lg:text-xl text-base">Google Play</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <hr class="lg:mt-10 mt-5 lg:mb-8 mb-4 text-[#ffffff4d] border-dashed" />
+      <div
+        class="font-inter text-xs flex lg:flex-row flex-col-reverse items-center justify-between gap-4"
+      >
+        <p class="text-[#ffffffb3] lg:text-start text-center">
+          @all rights reserved, P-Ticket services limited.2024
+        </p>
+        <div
+          class="text-[#ffffff] flex lg:flex-row flex-col items-center justify-between lg:gap-8 gap-2"
+        >
+          <p>Terms & condition</p>
+          <p>Return & refund policy</p>
+          <p>Privacy policy</p>
+        </div>
+      </div>
     </footer>
 
     <!----------- JavaScript ----------->
