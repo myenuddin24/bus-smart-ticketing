@@ -91,6 +91,7 @@
                 safe, comfortable, and hassle-free journey with P-Ticket.
               </p>
               <button
+                onclick="scrollDown()"
                 class="btn btn-primary text-[#030712] font-bold text-sm lg:text-xl bg-[#1DD100] rounded-xl border-none shadow-none lg:px-5 lg:py-7"
               >
                 Buy Tickets
@@ -217,7 +218,7 @@
             </div>
             <div class="space-y-2">
               <h2 class="lg:text-2xl text-xl font-bold text-[#030712]">
-                Couple 20
+                Couple20
               </h2>
               <p class="text-[#03071266]">Coupon Code</p>
             </div>
@@ -234,6 +235,7 @@
 
       <!---- seat booking section ---->
       <section
+        id="seat-booking"
         class="shadow-[0_-2px_0_0_#1DD100] rounded-t-3xl bg-[#F7F8F8] lg:py-24 py-12"
       >
         <!-- seat booking heading -->
@@ -287,7 +289,7 @@
                   <p
                     class="font-inter lg:text-base text-xs font-medium text-[#1DD100]"
                   >
-                    <span>40</span> Seats left
+                    <span id="total-seat">40</span> Seats left
                   </p>
                 </div>
               </div>
@@ -403,14 +405,12 @@
                   A
                 </div>
                 <div
-                  id="seat-btn"
-                  class="btn btn-sm rounded-lg font-inter lg:text-base text-xs font-medium text-[#03071280] col-start-2 lg:col-span-3 col-span-1"
+                  class="seat-btn btn btn-sm rounded-lg font-inter lg:text-base text-xs font-medium text-[#03071280] col-start-2 lg:col-span-3 col-span-1"
                 >
                   A1
                 </div>
                 <div
-                  id="seat-btn"
-                  class="btn btn-sm rounded-lg font-inter lg:text-base text-xs font-medium text-[#03071280] lg:col-start-5 col-start-3 lg:col-span-3 col-span-1"
+                  class="seat-btn btn btn-sm rounded-lg font-inter lg:text-base text-xs font-medium text-[#03071280] lg:col-start-5 col-start-3 lg:col-span-3 col-span-1"
                 >
                   A2
                 </div>
@@ -418,14 +418,12 @@
                   class="lg:col-start-8 col-start-4 lg:col-span-2 col-span-1"
                 ></div>
                 <div
-                  id="seat-btn"
-                  class="btn btn-sm rounded-lg font-inter lg:text-base text-xs font-medium text-[#03071280] lg:col-start-10 col-start-5 lg:col-span-3 col-span-1"
+                  class="seat-btn btn btn-sm rounded-lg font-inter lg:text-base text-xs font-medium text-[#03071280] lg:col-start-10 col-start-5 lg:col-span-3 col-span-1"
                 >
                   A3
                 </div>
                 <div
-                  id="seat-btn"
-                  class="btn btn-sm rounded-lg font-inter lg:text-base text-xs font-medium text-[#03071280] lg:col-start-13 col-start-6 lg:col-span-3 col-span-1"
+                  class="seat-btn btn btn-sm rounded-lg font-inter lg:text-base text-xs font-medium text-[#03071280] lg:col-start-13 col-start-6 lg:col-span-3 col-span-1"
                 >
                   A4
                 </div>
@@ -437,14 +435,12 @@
                   B
                 </div>
                 <div
-                  id="seat-btn"
-                  class="btn btn-sm rounded-lg font-inter lg:text-base text-xs font-medium text-[#03071280] col-start-2 lg:col-span-3 col-span-1"
+                  class="seat-btn btn btn-sm rounded-lg font-inter lg:text-base text-xs font-medium text-[#03071280] col-start-2 lg:col-span-3 col-span-1"
                 >
                   B1
                 </div>
                 <div
-                  id="seat-btn"
-                  class="btn btn-sm rounded-lg font-inter lg:text-base text-xs font-medium text-[#03071280] lg:col-start-5 col-start-3 lg:col-span-3 col-span-1"
+                  class="seat-btn btn btn-sm rounded-lg font-inter lg:text-base text-xs font-medium text-[#03071280] lg:col-start-5 col-start-3 lg:col-span-3 col-span-1"
                 >
                   B2
                 </div>
@@ -452,14 +448,12 @@
                   class="lg:col-start-8 col-start-4 lg:col-span-2 col-span-1"
                 ></div>
                 <div
-                  id="seat-btn"
-                  class="btn btn-sm rounded-lg font-inter lg:text-base text-xs font-medium text-[#03071280] lg:col-start-10 col-start-5 lg:col-span-3 col-span-1"
+                  class="seat-btn btn btn-sm rounded-lg font-inter lg:text-base text-xs font-medium text-[#03071280] lg:col-start-10 col-start-5 lg:col-span-3 col-span-1"
                 >
                   B3
                 </div>
                 <div
-                  id="seat-btn"
-                  class="btn btn-sm rounded-lg font-inter lg:text-base text-xs font-medium text-[#03071280] lg:col-start-13 col-start-6 lg:col-span-3 col-span-1"
+                  class="seat-btn btn btn-sm rounded-lg font-inter lg:text-base text-xs font-medium text-[#03071280] lg:col-start-13 col-start-6 lg:col-span-3 col-span-1"
                 >
                   B4
                 </div>
@@ -471,14 +465,12 @@
                   C
                 </div>
                 <div
-                  id="seat-btn"
-                  class="btn btn-sm rounded-lg font-inter lg:text-base text-xs font-medium text-[#03071280] col-start-2 lg:col-span-3 col-span-1"
+                  class="seat-btn btn btn-sm rounded-lg font-inter lg:text-base text-xs font-medium text-[#03071280] col-start-2 lg:col-span-3 col-span-1"
                 >
                   C1
                 </div>
                 <div
-                  id="seat-btn"
-                  class="btn btn-sm rounded-lg font-inter lg:text-base text-xs font-medium text-[#03071280] lg:col-start-5 col-start-3 lg:col-span-3 col-span-1"
+                  class="seat-btn btn btn-sm rounded-lg font-inter lg:text-base text-xs font-medium text-[#03071280] lg:col-start-5 col-start-3 lg:col-span-3 col-span-1"
                 >
                   C2
                 </div>
@@ -486,14 +478,12 @@
                   class="lg:col-start-8 col-start-4 lg:col-span-2 col-span-1"
                 ></div>
                 <div
-                  id="seat-btn"
-                  class="btn btn-sm rounded-lg font-inter lg:text-base text-xs font-medium text-[#03071280] lg:col-start-10 col-start-5 lg:col-span-3 col-span-1"
+                  class="seat-btn btn btn-sm rounded-lg font-inter lg:text-base text-xs font-medium text-[#03071280] lg:col-start-10 col-start-5 lg:col-span-3 col-span-1"
                 >
                   C3
                 </div>
                 <div
-                  id="seat-btn"
-                  class="btn btn-sm rounded-lg font-inter lg:text-base text-xs font-medium text-[#03071280] lg:col-start-13 col-start-6 lg:col-span-3 col-span-1"
+                  class="seat-btn btn btn-sm rounded-lg font-inter lg:text-base text-xs font-medium text-[#03071280] lg:col-start-13 col-start-6 lg:col-span-3 col-span-1"
                 >
                   C4
                 </div>
@@ -505,14 +495,12 @@
                   D
                 </div>
                 <div
-                  id="seat-btn"
-                  class="btn btn-sm rounded-lg font-inter lg:text-base text-xs font-medium text-[#03071280] col-start-2 lg:col-span-3 col-span-1"
+                  class="seat-btn btn btn-sm rounded-lg font-inter lg:text-base text-xs font-medium text-[#03071280] col-start-2 lg:col-span-3 col-span-1"
                 >
                   D1
                 </div>
                 <div
-                  id="seat-btn"
-                  class="btn btn-sm rounded-lg font-inter lg:text-base text-xs font-medium text-[#03071280] lg:col-start-5 col-start-3 lg:col-span-3 col-span-1"
+                  class="seat-btn btn btn-sm rounded-lg font-inter lg:text-base text-xs font-medium text-[#03071280] lg:col-start-5 col-start-3 lg:col-span-3 col-span-1"
                 >
                   D2
                 </div>
@@ -520,14 +508,12 @@
                   class="lg:col-start-8 col-start-4 lg:col-span-2 col-span-1"
                 ></div>
                 <div
-                  id="seat-btn"
-                  class="btn btn-sm rounded-lg font-inter lg:text-base text-xs font-medium text-[#03071280] lg:col-start-10 col-start-5 lg:col-span-3 col-span-1"
+                  class="seat-btn btn btn-sm rounded-lg font-inter lg:text-base text-xs font-medium text-[#03071280] lg:col-start-10 col-start-5 lg:col-span-3 col-span-1"
                 >
                   D3
                 </div>
                 <div
-                  id="seat-btn"
-                  class="btn btn-sm rounded-lg font-inter lg:text-base text-xs font-medium text-[#03071280] lg:col-start-13 col-start-6 lg:col-span-3 col-span-1"
+                  class="seat-btn btn btn-sm rounded-lg font-inter lg:text-base text-xs font-medium text-[#03071280] lg:col-start-13 col-start-6 lg:col-span-3 col-span-1"
                 >
                   D4
                 </div>
@@ -539,14 +525,12 @@
                   E
                 </div>
                 <div
-                  id="seat-btn"
-                  class="btn btn-sm rounded-lg font-inter lg:text-base text-xs font-medium text-[#03071280] col-start-2 lg:col-span-3 col-span-1"
+                  class="seat-btn btn btn-sm rounded-lg font-inter lg:text-base text-xs font-medium text-[#03071280] col-start-2 lg:col-span-3 col-span-1"
                 >
                   E1
                 </div>
                 <div
-                  id="seat-btn"
-                  class="btn btn-sm rounded-lg font-inter lg:text-base text-xs font-medium text-[#03071280] lg:col-start-5 col-start-3 lg:col-span-3 col-span-1"
+                  class="seat-btn btn btn-sm rounded-lg font-inter lg:text-base text-xs font-medium text-[#03071280] lg:col-start-5 col-start-3 lg:col-span-3 col-span-1"
                 >
                   E2
                 </div>
@@ -554,14 +538,12 @@
                   class="lg:col-start-8 col-start-4 lg:col-span-2 col-span-1"
                 ></div>
                 <div
-                  id="seat-btn"
-                  class="btn btn-sm rounded-lg font-inter lg:text-base text-xs font-medium text-[#03071280] lg:col-start-10 col-start-5 lg:col-span-3 col-span-1"
+                  class="seat-btn btn btn-sm rounded-lg font-inter lg:text-base text-xs font-medium text-[#03071280] lg:col-start-10 col-start-5 lg:col-span-3 col-span-1"
                 >
                   E3
                 </div>
                 <div
-                  id="seat-btn"
-                  class="btn btn-sm rounded-lg font-inter lg:text-base text-xs font-medium text-[#03071280] lg:col-start-13 col-start-6 lg:col-span-3 col-span-1"
+                  class="seat-btn btn btn-sm rounded-lg font-inter lg:text-base text-xs font-medium text-[#03071280] lg:col-start-13 col-start-6 lg:col-span-3 col-span-1"
                 >
                   E4
                 </div>
@@ -573,14 +555,12 @@
                   F
                 </div>
                 <div
-                  id="seat-btn"
-                  class="btn btn-sm rounded-lg font-inter lg:text-base text-xs font-medium text-[#03071280] col-start-2 lg:col-span-3 col-span-1"
+                  class="seat-btn btn btn-sm rounded-lg font-inter lg:text-base text-xs font-medium text-[#03071280] col-start-2 lg:col-span-3 col-span-1"
                 >
                   F1
                 </div>
                 <div
-                  id="seat-btn"
-                  class="btn btn-sm rounded-lg font-inter lg:text-base text-xs font-medium text-[#03071280] lg:col-start-5 col-start-3 lg:col-span-3 col-span-1"
+                  class="seat-btn btn btn-sm rounded-lg font-inter lg:text-base text-xs font-medium text-[#03071280] lg:col-start-5 col-start-3 lg:col-span-3 col-span-1"
                 >
                   F2
                 </div>
@@ -588,14 +568,12 @@
                   class="lg:col-start-8 col-start-4 lg:col-span-2 col-span-1"
                 ></div>
                 <div
-                  id="seat-btn"
-                  class="btn btn-sm rounded-lg font-inter lg:text-base text-xs font-medium text-[#03071280] lg:col-start-10 col-start-5 lg:col-span-3 col-span-1"
+                  class="seat-btn btn btn-sm rounded-lg font-inter lg:text-base text-xs font-medium text-[#03071280] lg:col-start-10 col-start-5 lg:col-span-3 col-span-1"
                 >
                   F3
                 </div>
                 <div
-                  id="seat-btn"
-                  class="btn btn-sm rounded-lg font-inter lg:text-base text-xs font-medium text-[#03071280] lg:col-start-13 col-start-6 lg:col-span-3 col-span-1"
+                  class="seat-btn btn btn-sm rounded-lg font-inter lg:text-base text-xs font-medium text-[#03071280] lg:col-start-13 col-start-6 lg:col-span-3 col-span-1"
                 >
                   F4
                 </div>
@@ -607,14 +585,12 @@
                   G
                 </div>
                 <div
-                  id="seat-btn"
-                  class="btn btn-sm rounded-lg font-inter lg:text-base text-xs font-medium text-[#03071280] col-start-2 lg:col-span-3 col-span-1"
+                  class="seat-btn btn btn-sm rounded-lg font-inter lg:text-base text-xs font-medium text-[#03071280] col-start-2 lg:col-span-3 col-span-1"
                 >
                   G1
                 </div>
                 <div
-                  id="seat-btn"
-                  class="btn btn-sm rounded-lg font-inter lg:text-base text-xs font-medium text-[#03071280] lg:col-start-5 col-start-3 lg:col-span-3 col-span-1"
+                  class="seat-btn btn btn-sm rounded-lg font-inter lg:text-base text-xs font-medium text-[#03071280] lg:col-start-5 col-start-3 lg:col-span-3 col-span-1"
                 >
                   G2
                 </div>
@@ -622,14 +598,12 @@
                   class="lg:col-start-8 col-start-4 lg:col-span-2 col-span-1"
                 ></div>
                 <div
-                  id="seat-btn"
-                  class="btn btn-sm rounded-lg font-inter lg:text-base text-xs font-medium text-[#03071280] lg:col-start-10 col-start-5 lg:col-span-3 col-span-1"
+                  class="seat-btn btn btn-sm rounded-lg font-inter lg:text-base text-xs font-medium text-[#03071280] lg:col-start-10 col-start-5 lg:col-span-3 col-span-1"
                 >
                   G3
                 </div>
                 <div
-                  id="seat-btn"
-                  class="btn btn-sm rounded-lg font-inter lg:text-base text-xs font-medium text-[#03071280] lg:col-start-13 col-start-6 lg:col-span-3 col-span-1"
+                  class="seat-btn btn btn-sm rounded-lg font-inter lg:text-base text-xs font-medium text-[#03071280] lg:col-start-13 col-start-6 lg:col-span-3 col-span-1"
                 >
                   G4
                 </div>
@@ -641,14 +615,12 @@
                   H
                 </div>
                 <div
-                  id="seat-btn"
-                  class="btn btn-sm rounded-lg font-inter lg:text-base text-xs font-medium text-[#03071280] col-start-2 lg:col-span-3 col-span-1"
+                  class="seat-btn btn btn-sm rounded-lg font-inter lg:text-base text-xs font-medium text-[#03071280] col-start-2 lg:col-span-3 col-span-1"
                 >
                   H1
                 </div>
                 <div
-                  id="seat-btn"
-                  class="btn btn-sm rounded-lg font-inter lg:text-base text-xs font-medium text-[#03071280] lg:col-start-5 col-start-3 lg:col-span-3 col-span-1"
+                  class="seat-btn btn btn-sm rounded-lg font-inter lg:text-base text-xs font-medium text-[#03071280] lg:col-start-5 col-start-3 lg:col-span-3 col-span-1"
                 >
                   H2
                 </div>
@@ -656,14 +628,12 @@
                   class="lg:col-start-8 col-start-4 lg:col-span-2 col-span-1"
                 ></div>
                 <div
-                  id="seat-btn"
-                  class="btn btn-sm rounded-lg font-inter lg:text-base text-xs font-medium text-[#03071280] lg:col-start-10 col-start-5 lg:col-span-3 col-span-1"
+                  class="seat-btn btn btn-sm rounded-lg font-inter lg:text-base text-xs font-medium text-[#03071280] lg:col-start-10 col-start-5 lg:col-span-3 col-span-1"
                 >
                   H3
                 </div>
                 <div
-                  id="seat-btn"
-                  class="btn btn-sm rounded-lg font-inter lg:text-base text-xs font-medium text-[#03071280] lg:col-start-13 col-start-6 lg:col-span-3 col-span-1"
+                  class="seat-btn btn btn-sm rounded-lg font-inter lg:text-base text-xs font-medium text-[#03071280] lg:col-start-13 col-start-6 lg:col-span-3 col-span-1"
                 >
                   H4
                 </div>
@@ -675,14 +645,12 @@
                   I
                 </div>
                 <div
-                  id="seat-btn"
-                  class="btn btn-sm rounded-lg font-inter lg:text-base text-xs font-medium text-[#03071280] col-start-2 lg:col-span-3 col-span-1"
+                  class="seat-btn btn btn-sm rounded-lg font-inter lg:text-base text-xs font-medium text-[#03071280] col-start-2 lg:col-span-3 col-span-1"
                 >
                   I1
                 </div>
                 <div
-                  id="seat-btn"
-                  class="btn btn-sm rounded-lg font-inter lg:text-base text-xs font-medium text-[#03071280] lg:col-start-5 col-start-3 lg:col-span-3 col-span-1"
+                  class="seat-btn btn btn-sm rounded-lg font-inter lg:text-base text-xs font-medium text-[#03071280] lg:col-start-5 col-start-3 lg:col-span-3 col-span-1"
                 >
                   I2
                 </div>
@@ -690,14 +658,12 @@
                   class="lg:col-start-8 col-start-4 lg:col-span-2 col-span-1"
                 ></div>
                 <div
-                  id="seat-btn"
-                  class="btn btn-sm rounded-lg font-inter lg:text-base text-xs font-medium text-[#03071280] lg:col-start-10 col-start-5 lg:col-span-3 col-span-1"
+                  class="seat-btn btn btn-sm rounded-lg font-inter lg:text-base text-xs font-medium text-[#03071280] lg:col-start-10 col-start-5 lg:col-span-3 col-span-1"
                 >
                   I3
                 </div>
                 <div
-                  id="seat-btn"
-                  class="btn btn-sm rounded-lg font-inter lg:text-base text-xs font-medium text-[#03071280] lg:col-start-13 col-start-6 lg:col-span-3 col-span-1"
+                  class="seat-btn btn btn-sm rounded-lg font-inter lg:text-base text-xs font-medium text-[#03071280] lg:col-start-13 col-start-6 lg:col-span-3 col-span-1"
                 >
                   I4
                 </div>
@@ -709,14 +675,12 @@
                   J
                 </div>
                 <div
-                  id="seat-btn"
-                  class="btn btn-sm rounded-lg font-inter lg:text-base text-xs font-medium text-[#03071280] col-start-2 lg:col-span-3 col-span-1"
+                  class="seat-btn btn btn-sm rounded-lg font-inter lg:text-base text-xs font-medium text-[#03071280] col-start-2 lg:col-span-3 col-span-1"
                 >
                   J1
                 </div>
                 <div
-                  id="seat-btn"
-                  class="btn btn-sm rounded-lg font-inter lg:text-base text-xs font-medium text-[#03071280] lg:col-start-5 col-start-3 lg:col-span-3 col-span-1"
+                  class="seat-btn btn btn-sm rounded-lg font-inter lg:text-base text-xs font-medium text-[#03071280] lg:col-start-5 col-start-3 lg:col-span-3 col-span-1"
                 >
                   J2
                 </div>
@@ -724,14 +688,12 @@
                   class="lg:col-start-8 col-start-4 lg:col-span-2 col-span-1"
                 ></div>
                 <div
-                  id="seat-btn"
-                  class="btn btn-sm rounded-lg font-inter lg:text-base text-xs font-medium text-[#03071280] lg:col-start-10 col-start-5 lg:col-span-3 col-span-1"
+                  class="seat-btn btn btn-sm rounded-lg font-inter lg:text-base text-xs font-medium text-[#03071280] lg:col-start-10 col-start-5 lg:col-span-3 col-span-1"
                 >
                   J3
                 </div>
                 <div
-                  id="seat-btn"
-                  class="btn btn-sm rounded-lg font-inter lg:text-base text-xs font-medium text-[#03071280] lg:col-start-13 col-start-6 lg:col-span-3 col-span-1"
+                  class="seat-btn btn btn-sm rounded-lg font-inter lg:text-base text-xs font-medium text-[#03071280] lg:col-start-13 col-start-6 lg:col-span-3 col-span-1"
                 >
                   J4
                 </div>
@@ -768,7 +730,7 @@
                 <hr class="my-3 text-[#03071233] border-dashed" />
                 <div
                   id="selected-seat"
-                  class="text-[#03071299] font-normal flex items-center justify-between"
+                  class="text-[#03071299] font-normal"
                 ></div>
                 <hr class="my-3 text-[#03071233] border-solid" />
                 <div class="flex items-center justify-between">
@@ -777,7 +739,10 @@
                 </div>
 
                 <!---- apply coupon ---->
-                <div class="flex items-center justify-center w-full">
+                <div
+                  id="coupon-section"
+                  class="flex items-center justify-center w-full"
+                >
                   <input
                     id="input-coupon"
                     type="text"
@@ -786,11 +751,13 @@
                   />
                   <button
                     id="apply-coupon"
-                    class="btn lg:text-base text-xs font-semibold text-[#ffffff] bg-[#1DD100] rounded-lg lg:-ml-20 -ml-[70px]"
+                    disabled
+                    class="btn lg:text-base text-xs font-semibold text-[#ffffff] bg-[#1DD100] rounded-lg lg:-ml-20 -ml-[70px] disabled:bg-gray-500"
                   >
                     Apply
                   </button>
                 </div>
+                <hr class="my-2 text-[#03071233] border-dashed" />
                 <div class="flex items-center justify-between">
                   <p>Grand Total</p>
                   <p>BDT <span id="grand-total">0</span></p>
@@ -832,7 +799,8 @@
 
                   <button
                     id="next-btn"
-                    class="btn bg-[#1DD100] text-white my-2 w-full rounded-xl font-raleway font-extrabold lg:text-lg text-base"
+                    disabled
+                    class="btn bg-[#1DD100] text-white my-2 w-full rounded-xl font-raleway font-extrabold lg:text-lg text-base disabled:bg-gray-500"
                     onclick="my_modal_4.showModal()"
                   >
                     Next
