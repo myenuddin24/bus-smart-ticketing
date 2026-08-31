@@ -57,11 +57,12 @@ for (const seatBtn of seatBtns) {
   });
 }
 
-// coupon section
+// coupon section ---------->>
 const inputCoupon = document.getElementById("input-coupon");
 const applyCoupon = document.getElementById("apply-coupon");
 
-inputCoupon.addEventListener("keyup", function (event) {
+// Enable the apply btn.
+inputCoupon.addEventListener("input", function (event) {
   if (event.target.value.trim() !== "") {
     applyCoupon.disabled = false;
   } else {
@@ -69,6 +70,7 @@ inputCoupon.addEventListener("keyup", function (event) {
   }
 });
 
+// apply the coupon and get the discount.
 applyCoupon.addEventListener("click", function () {
   if (inputCoupon.value.trim() === "NEW15") {
     calculateDiscountAndUpdateThePrice("grand-total", 0.15);
@@ -82,3 +84,19 @@ applyCoupon.addEventListener("click", function () {
   const couponSection = document.getElementById("coupon-section");
   couponSection.classList.add("hidden");
 });
+
+// confirm section ------------->>
+const passengerName = document.getElementById("passenger-name");
+const phoneNumber = document.getElementById("phone-number");
+const nextBtn = document.getElementById("next-btn");
+
+// Enable the next btn.
+function cheakInput() {
+  if (passengerName.value.trim() !== "" && phoneNumber.value.trim() !== "") {
+    nextBtn.disabled = false;
+  } else {
+    nextBtn.disabled = true;
+  }
+}
+passengerName.addEventListener("input", cheakInput);
+phoneNumber.addEventListener("input", cheakInput);
